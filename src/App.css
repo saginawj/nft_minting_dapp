@@ -32,6 +32,14 @@
   font-size: 100px;
 }
 
+.rarity {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: rgb(10, 1, 1);
+  font-size: 40px;
+}
+
 .sign-up {
   background-position: center;
   background-size: cover;

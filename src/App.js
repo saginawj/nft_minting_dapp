@@ -8,8 +8,11 @@ import styled from "styled-components";
 //components related to new look and feel 
 import './App.css';
 import Home from './components/pages/Home';
+import Rarity from './components/pages/Rarity';
 import Navbar from './components/Navbar';
+import Dapp from './components/Dapp';
 import Footer from './components/Footer';
+import Minter from './components/Minter';
 
 function App() {
   return (
@@ -18,7 +21,10 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
+          <Route path='/rarity' component={Rarity} />
         </Switch>
+        <Dapp />
+        <Minter />
         <Footer />
       </Router>
     </>

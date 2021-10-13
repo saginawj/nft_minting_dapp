@@ -2,13 +2,13 @@
 import React, { useEffect, useState, useRef } from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
-import { connect } from "../../redux/blockchain/blockchainActions";
-import { fetchData } from "../../redux/data/dataActions";
-import * as s from "../../styles/globalStyles";
+import { connect } from "../redux/blockchain/blockchainActions";
+import { fetchData } from "../redux/data/dataActions";
+import * as s from "../styles/globalStyles";
 import styled from "styled-components";
 
 //from new look and feel.  need to re-import
-import '../../App.css';
+import '../App.css';
 
 //styles from hashlips
 const truncate = (input, len) =>
@@ -101,7 +101,7 @@ export const StyledLink = styled.a`
 `;
 
 //from hashlips app.js
-function Home() {
+function Dapp() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
@@ -416,4 +416,4 @@ function Home() {
   );  
 }
 
-export default Home;
+export default Dapp;
