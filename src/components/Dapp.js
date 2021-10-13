@@ -7,13 +7,16 @@ import { fetchData } from "../redux/data/dataActions";
 import * as s from "../styles/globalStyles";
 import styled from "styled-components";
 
-//from new look and feel.  need to re-import
+//from new look and feel.  
 import '../App.css';
+import './Dapp.css';
 
 //styles from hashlips
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
 
+//extracted the below css to dapp.css file
+/*
 export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
@@ -58,6 +61,7 @@ export const StyledRoundButton = styled.button`
     -moz-box-shadow: none;
   }
 `;
+*/
 
 export const ResponsiveWrapper = styled.div`
   display: flex;
@@ -292,7 +296,7 @@ function Dapp() {
                       Connect to the {CONFIG.NETWORK.NAME} network
                     </s.TextDescription>
                     <s.SpacerSmall />
-                    <StyledButton
+                    <button className="button-styled"
                       onClick={(e) => {
                         e.preventDefault();
                         dispatch(connect());
@@ -300,7 +304,8 @@ function Dapp() {
                       }}
                     >
                       CONNECT
-                    </StyledButton>
+                    </button>
+                
                     {blockchain.errorMsg !== "" ? (
                       <>
                         <s.SpacerSmall />
@@ -327,7 +332,7 @@ function Dapp() {
                     </s.TextDescription>
                     <s.SpacerMedium />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledRoundButton
+                      <button className="button-styled-round"
                         style={{ lineHeight: 0.4 }}
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
@@ -336,7 +341,7 @@ function Dapp() {
                         }}
                       >
                         -
-                      </StyledRoundButton>
+                      </button>
                       <s.SpacerMedium />
                       <s.TextDescription
                         style={{
@@ -347,7 +352,7 @@ function Dapp() {
                         {mintAmount}
                       </s.TextDescription>
                       <s.SpacerMedium />
-                      <StyledRoundButton
+                      <button className="button-styled-round"
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -355,11 +360,11 @@ function Dapp() {
                         }}
                       >
                         +
-                      </StyledRoundButton>
+                      </button>
                     </s.Container>
                     <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledButton
+                      <button className="button-styled"
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -368,7 +373,7 @@ function Dapp() {
                         }}
                       >
                         {claimingNft ? "BUSY" : "BUY"}
-                      </StyledButton>
+                      </button>
                     </s.Container>
                   </>
                 )}
