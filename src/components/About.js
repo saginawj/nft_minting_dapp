@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import '../App.css';
-import { Button } from './Button';
 import './About.css';
+
+
 
 function About() {
   return (
     <div className='hero-container'>
-      <h1>This is a Sample Section</h1>
-      <p>Can be configured and placed in a page</p>
+      <video src='/config/videos/video-1.mp4' autoPlay loop muted />
+      <h1>Very Lazy Faces</h1>
+      <p>The future of NFTs</p>
     </div>
   );
 }

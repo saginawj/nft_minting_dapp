@@ -209,16 +209,11 @@ function Dapp() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--primary)" }}
+        style={{ padding: 80, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/img-8.jpg" : null}
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
-          </s.Container>
-          <s.SpacerLarge />
+        <ResponsiveWrapper flex={1} style={{ padding: 80 }} test>
           <s.Container
             flex={2}
             jc={"center"}
@@ -226,11 +221,32 @@ function Dapp() {
             style={{
               backgroundColor: "var(--accent)",
               padding: 24,
-              borderRadius: 24,
-              border: "4px dashed var(--secondary)",
+              borderRadius: 4,
+              border: "4px var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
-            }}
+            }} 
           >
+          <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 40,
+            fontWeight: "normal",
+            color: "var(--accent-text)",
+          }}
+        >
+          Mint your {CONFIG.NFT_NAME}
+        </s.TextTitle>
+            
+          <s.TextTitle
+          style={{
+            textAlign: "center",
+            fontSize: 15,
+            fontWeight: "normal",
+            color: "var(--accent-text)",
+          }}
+        >
+          Below is the number of NFTs remaining from the max supply
+        </s.TextTitle>
             <s.TextTitle
               style={{
                 textAlign: "center",
@@ -248,7 +264,7 @@ function Dapp() {
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
+                Contract Address: {truncate(CONFIG.CONTRACT_ADDRESS, 4)}
               </StyledLink>
             </s.TextDescription>
             <s.SpacerSmall />
@@ -274,12 +290,12 @@ function Dapp() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
+                  Cost per {CONFIG.SYMBOL}: {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL}
                 </s.TextTitle>
-                <s.SpacerXSmall />
+
                 <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  style={{ textAlign: "center", color: "var(--accent-text)"}}
                 >
                   Excluding gas fees.
                 </s.TextDescription>
@@ -382,13 +398,7 @@ function Dapp() {
             <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-              alt={"example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
-            />
-          </s.Container>
+        
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
