@@ -13,21 +13,20 @@ import Navbar from './components/Navbar';
 import Dapp from './components/Dapp';
 import Footer from './components/Footer';
 import About from './components/About';
-import Countdown from './components/Countdown';
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        
         <About />
-        <Dapp />
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/rarity' component={Rarity} />
         </Switch>
         <Footer />
+        <About />
+        <Dapp />
       </Router>
     </>
   );
