@@ -10,7 +10,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import Rarity from './components/pages/Rarity';
 import Navbar from './components/Navbar';
-import Dapp from './components/Dapp';
+import DappOriginal from './components/DappOriginal';
 import Footer from './components/Footer';
 import About from './components/About';
 
@@ -19,14 +19,12 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <About />
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/rarity' component={Rarity} />
         </Switch>
+        <DappOriginal />
         <Footer />
-        <About />
-        <Dapp />
       </Router>
     </>
   );
