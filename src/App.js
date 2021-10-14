@@ -13,13 +13,14 @@ import Navbar from './components/Navbar';
 import Dapp from './components/Dapp';
 import Footer from './components/Footer';
 import About from './components/About';
-import HeroSection from './components/HeroSection';
+import Countdown from './components/Countdown';
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+        
         <About />
         <Dapp />
         <Switch>

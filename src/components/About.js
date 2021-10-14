@@ -11,6 +11,9 @@ function About() {
       <h1>Very Lazy Faces</h1>
       <p>The future of NFTs</p>
       <p>Mint yours below!</p>
+
+      
+      
     </div>
   );
 }
