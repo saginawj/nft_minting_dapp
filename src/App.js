@@ -9,6 +9,7 @@ import styled from "styled-components";
 import './App.css';
 import Home from './components/pages/Home';
 import Rarity from './components/pages/Rarity';
+import Original from './components/pages/Original';
 import Navbar from './components/Navbar';
 import DappOriginal from './components/DappOriginal';
 import Footer from './components/Footer';
@@ -22,8 +23,8 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/rarity' component={Rarity} />
+          <Route path='/original' component={Original} />
         </Switch>
-        <DappOriginal />
         <Footer />
       </Router>
     </>
