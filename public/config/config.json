@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xA0B2C1753Bc6B211e7e7Cb5051949D0f552e4b70",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xa0b2c1753bc6b211e7e7cb5051949d0f552e4b70",
+  "CONTRACT_ADDRESS": "0xC32981CEC7aE0d924E4Cb5c412Ed9891fC66e2dB",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xC32981CEC7aE0d924E4Cb5c412Ed9891fC66e2dB",
   "NETWORK": {
     "NAME": "Ethereum",
     "SYMBOL": "ETH",
     "ID": 4
   },
-  "NFT_NAME": "Very Lazy Faces",
-  "SYMBOL": "VLF",
-  "MAX_SUPPLY": 5,
-  "WEI_COST": 50000000000000000,
-  "DISPLAY_COST": 0.05,
+  "NFT_NAME": "Everyday Faces",
+  "SYMBOL": "EF",
+  "MAX_SUPPLY": 1000,
+  "WEI_COST": 1000000000000000,
+  "DISPLAY_COST": 0.001,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/verylazyfaces",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/everydayfaces",
   "SHOW_BACKGROUND": true
 }

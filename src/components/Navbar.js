@@ -10,7 +10,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const title = "Very Lazy Faces";
+  const title = "Everyday Faces";
 
   const showButton = () => {
     if (window.innerWidth <= 960) {

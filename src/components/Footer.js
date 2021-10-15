@@ -3,6 +3,8 @@ import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
+const title = "Everyday Faces";
+
 function Footer() {
   return (
     <div className='footer-container'>
@@ -50,7 +52,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              Very Lazy Faces
+              {title}
               <i class='fab fa-typo3' />
             </Link>
           </div>
