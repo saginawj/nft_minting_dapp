@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+//import twitter from 'config/images/twitter.png';
 import './Navbar.css';
 
 function Navbar() {
@@ -62,15 +63,7 @@ function Navbar() {
               </Link>
             </li>
         
-            <li className='nav-item'>
-              <Link
-                to='/original'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                [T]
-              </Link>
-            </li>
+
             <li>
               <Link
                 to='/home'
