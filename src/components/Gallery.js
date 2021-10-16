@@ -5,39 +5,35 @@ import CardItem from './CardItem';
 function Gallery() {
   return (
     <div className='cards'>
-      <h1>Here's a few sample pics.  One could be yours!</h1>
+      <h1>Here's a few sample pics. </h1>
+      <h1>Given this project is generative, the final rarity and pictures will not be known until minting is complete. </h1>
+
       <div className='cards__container'>
         <div className='cards__wrapper'>
+
           <ul className='cards__items'>
             <CardItem
-              src='config/images/face1.png'
-              text='Sample image'
+              src='config/images/face2.png'
+              text='Tiled Face'
+              label='Super Rare'
               path='/services'
             />
             <CardItem
-              src='config/images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
-              path='/services'
-            />
-          </ul>
-          <ul className='cards__items'>
-            <CardItem
-              src='config/images/face1.png'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
-              path='/services'
-            />
-            <CardItem
-              src='config/images/face1.png'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
+              src='config/images/face3.png'
+              text='Blurred Face'
+              label='Normal'
               path='/products'
             />
             <CardItem
-              src='config/images/face1.png'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
+              src='config/images/face4.png'
+              text='Fractial Tattoos'
+              label='Rare'
+              path='/sign-up'
+            />
+             <CardItem
+              src='config/images/face5.png'
+              text='Unmatched Eyes'
+              label='Normal'
               path='/sign-up'
             />
           </ul>

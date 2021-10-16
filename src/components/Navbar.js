@@ -62,6 +62,9 @@ function Navbar() {
                 Original
               </Link>
             </li>
+            
+            
+            
 
         
             <li>
@@ -72,9 +75,13 @@ function Navbar() {
               >
                 Mint
               </Link>
+
+              
+
             </li>
           </ul>
           {button && <Button buttonStyle='btn--outline'>MINT</Button>}
+          
         </div>
       </nav>
     </>
